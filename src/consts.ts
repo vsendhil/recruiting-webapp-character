@@ -9,30 +9,36 @@ export const ATTRIBUTE_LIST = [
     'Charisma',
 ];
 
-export const CLASS_LIST: Record<Class, Attributes> = {
+export const CLASS_LIST = [
+    'Barbarian',
+    'Wizard',
+    'Bard'
+];
+
+export const CLASS_REQS: Record<Class, Attributes> = {
     'Barbarian': {
-        'Strength': 14,
-        'Dexterity': 9,
-        'Constitution': 9,
-        'Intelligence': 9,
-        'Wisdom': 9,
-        'Charisma': 9,
+        'Strength': { value: 14, modifier: 2 },
+        'Dexterity': { value: 9, modifier: -1 },
+        'Constitution': { value: 9, modifier: -1 },
+        'Intelligence': { value: 9, modifier: -1 },
+        'Wisdom': { value: 9, modifier: -1 },
+        'Charisma': { value: 9, modifier: -1 },
     },
     'Wizard': {
-        'Strength': 9,
-        'Dexterity': 9,
-        'Constitution': 9,
-        'Intelligence': 14,
-        'Wisdom': 9,
-        'Charisma': 9,
+        'Strength': { value: 9, modifier: -1 },
+        'Dexterity': { value: 9, modifier: -1 },
+        'Constitution': { value: 9, modifier: -1 },
+        'Intelligence': { value: 14, modifier: 2 },
+        'Wisdom': { value: 9, modifier: -1 },
+        'Charisma': { value: 9, modifier: -1 },
     },
     'Bard': {
-        'Strength': 9,
-        'Dexterity': 9,
-        'Constitution': 9,
-        'Intelligence': 9,
-        'Wisdom': 9,
-        'Charisma': 14,
+        'Strength': { value: 9, modifier: -1 },
+        'Dexterity': { value: 9, modifier: -1 },
+        'Constitution': { value: 9, modifier: -1 },
+        'Intelligence': { value: 9, modifier: -1 },
+        'Wisdom': { value: 9, modifier: -1 },
+        'Charisma': { value: 14, modifier: 2 },
     },
 }
 

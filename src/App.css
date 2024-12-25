@@ -27,9 +27,9 @@
 }
 
 .App-section {
-  flex: 1 1 0;
   background-color: hsl(220deg 13% 13%);
   color: white;
+  flex-direction: column;
 }
 
 .App-link {
@@ -40,7 +40,35 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.classNameRed {
+  width: 110%;
+  color: red;
+}
+
+.classNameGreen {
+  width: 110%;
+  color: green;
+}
+
+.Contents {
+  /*flex: 1 1 0;*/
+  background-color: hsl(220deg 13% 13%);
+  color: white;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Attribute {
+  text-align: 'center';
+}
+
+.ClassClicked {
+  border: 1px solid;
 }
